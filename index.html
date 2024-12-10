@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Кулинарные рецепты</title>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/lucide@latest"></script>
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=ВАШ_API_КЛЮЧ&lang=ru_RU"
+			type="text/javascript"
+		></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+                    <li><a href="#home">
+                        <img src="/public/images/logo.png" class="logo"  alt="Кулинарные рецепты">
+                    </a></li>
+					<li><a href="#home">Главная</a></li>
+					<li><a href="#about">О нас</a></li>
+					<li><a href="#recipes">Рецепты</a></li>
+					<li><a href="#map">Карта</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="home">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img
+								src="/public/images/cheeseburger.jpg"
+								style="width: 1420px"
+								alt="Еда"
+							/>
+							<div class="slide-content">
+								<h1>Добро пожаловать в мир вкусных рецептов</h1>
+								<p>Откройте для себя новые кулинарные шедевры</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="/public/images/second-slider.jpg"
+								style="width: 1420px"
+								alt="Готовка"
+							/>
+							<div class="slide-content">
+								<h1>Готовьте с удовольствием</h1>
+								<p>Простые рецепты для любого уровня</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="/public/images/desert-slider.jpg"
+								alt="Ингредиенты"
+								style="width: 1420px"
+							/>
+							<div class="slide-content">
+								<h1>Свежие ингредиенты</h1>
+								<p>Качественные продукты для отличного результата</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</section>
+
+			<section id="about">
+				<h2>О нас</h2>
+				<p>
+					Мы - команда энтузиастов, которые любят готовить и делиться своими
+					любимыми рецептами. Наша цель - вдохновить вас на кулинарные
+					эксперименты и помочь создать незабываемые блюда для ваших близких.
+				</p>
+			</section>
+
+			<section id="recipes">
+				<h2>Наши рецепты</h2>
+				<div class="recipe-grid">
+					<div class="recipe-card">
+						<img src="/public/images/pasta.jpg" alt="Паста" />
+						<h3>Паста Карбонара</h3>
+						<p>Классическое итальянское блюдо с беконом и сыром</p>
+						<a href="#" class="btn view-recipe" data-recipe="pasta"
+							>Смотреть рецепт</a
+						>
+					</div>
+					<div class="recipe-card">
+						<img src="/public/images/salad.jpg" alt="Салат" />
+						<h3>Греческий салат</h3>
+						<p>Свежий и легкий салат с фетой и оливками</p>
+						<a href="#" class="btn view-recipe" data-recipe="salad"
+							>Смотреть рецепт</a
+						>
+					</div>
+					<div class="recipe-card">
+						<img src="/public/images/soup.jpg" alt="Суп" />
+						<h3>Тыквенный суп</h3>
+						<p>Согревающий суп-пюре из тыквы со специями</p>
+						<a href="#" class="btn view-recipe" data-recipe="soup"
+							>Смотреть рецепт</a
+						>
+					</div>
+					<div class="recipe-card">
+						<img src="/public/images/fondan.jpg" alt="Десерт" />
+						<h3>Шоколадный фондан</h3>
+						<p>Нежный шоколадный десерт с жидкой начинкой</p>
+						<a href="#" class="btn view-recipe" data-recipe="dessert"
+							>Смотреть рецепт</a
+						>
+					</div>
+				</div>
+			</section>
+
+			<section id="map">
+				<h2>Наше расположение</h2>
+				<div id="map-container" style="width: 100%; height: 400px"></div>
+				<div class="contact-info">
+					<h3>Наши контакты</h3>
+					<p>
+						<i data-lucide="map-pin"></i> Адрес: ул. Рецептная, 123, г. Москва
+					</p>
+					<p><i data-lucide="phone"></i> Телефон: +7 (123) 456-78-90</p>
+					<p><i data-lucide="mail"></i> Email: info@recipessite.ru</p>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 Кулинарные рецепты. Все права защищены.</p>
+		</footer>
+
+		<div id="recipe-modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2 id="recipe-title"></h2>
+				<div id="recipe-content"></div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
