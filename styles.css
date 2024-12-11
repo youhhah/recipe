@@ -4,10 +4,25 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+}
+
+main {
+background: rgb(80, 80, 205);
+  background: linear-gradient(
+    180deg,
+    rgba(80, 80, 205, 1) 27%,
+    rgba(52, 44, 176, 1) 50%,
+    rgba(48, 160, 183, 1) 65%,
+    rgba(164, 185, 153, 1) 86%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-attachment: fixed;
+
 }
 
 header {
