@@ -11,16 +11,33 @@ body {
     color: #333;
 }
 
-main {
-  background: rgb(80, 80, 205);
+#us {
+  text-align: center;
+}
+
+#map {
   background: linear-gradient(
-    180deg,
-    rgba(80, 80, 205, 1) 27%,
-    rgba(52, 44, 176, 1) 50%,
-    rgba(48, 160, 183, 1) 65%,
-    rgba(164, 185, 153, 1) 86%,
-    rgba(0, 212, 255, 1) 100%
+    #c6e4ee 0%,
+    #c6e4ee 40%,
+    #fed1ae 60%,
+    #faa0b9 70%,
+    #cb7dcb 80%,
+    #757ecb 100%
   );
+
+  background-attachment: fixed;
+}
+
+#home {
+  background: linear-gradient(
+    #c6e4ee 0%,
+    #c6e4ee 40%,
+    #fed1ae 60%,
+    #faa0b9 70%,
+    #cb7dcb 80%,
+    #757ecb 100%
+  );
+
   background-attachment: fixed;
 }
 
