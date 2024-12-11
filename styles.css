@@ -12,7 +12,7 @@ body {
 }
 
 main {
-background: rgb(80, 80, 205);
+  background: rgb(80, 80, 205);
   background: linear-gradient(
     180deg,
     rgba(80, 80, 205, 1) 27%,
@@ -22,7 +22,6 @@ background: rgb(80, 80, 205);
     rgba(0, 212, 255, 1) 100%
   );
   background-attachment: fixed;
-
 }
 
 header {
